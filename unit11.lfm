@@ -1,0 +1,280 @@
+object Form11: TForm11
+  Left = 87
+  Height = 407
+  Top = 127
+  Width = 978
+  Caption = 'Biblioteczka'
+  ClientHeight = 407
+  ClientWidth = 978
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 137
+    Caption = 'Edycja istniejącego wpisu:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 48
+    Width = 30
+    Caption = 'Tytuł:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 80
+    Width = 33
+    Caption = 'Autor:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 112
+    Width = 78
+    Caption = 'Wydawnictwo:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 15
+    Top = 144
+    Width = 23
+    Caption = 'Rok:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 176
+    Width = 47
+    Caption = 'Gatunek:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 216
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 104
+    Height = 23
+    Top = 80
+    Width = 216
+    TabOrder = 1
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 104
+    Height = 23
+    Top = 112
+    Width = 216
+    TabOrder = 2
+    Text = 'Edit3'
+  end
+  object Edit4: TEdit
+    Left = 104
+    Height = 23
+    Top = 144
+    Width = 216
+    TabOrder = 3
+    Text = 'Edit4'
+  end
+  object Edit5: TEdit
+    Left = 104
+    Height = 23
+    Top = 176
+    Width = 216
+    TabOrder = 4
+    Text = 'Edit5'
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 15
+    Top = 208
+    Width = 49
+    Caption = 'Recenzja:'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 352
+    Height = 15
+    Top = 48
+    Width = 65
+    Caption = 'Przeczytana:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 352
+    Height = 15
+    Top = 80
+    Width = 37
+    Caption = 'Ocena:'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 352
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = 'ISBN:'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 352
+    Height = 15
+    Top = 144
+    Width = 95
+    Caption = 'Data przeczytania:'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 352
+    Height = 15
+    Top = 208
+    Width = 38
+    Caption = 'Opinia:'
+    ParentColor = False
+  end
+  object Edit8: TEdit
+    Left = 456
+    Height = 23
+    Top = 112
+    Width = 216
+    TabOrder = 5
+    Text = 'Edit8'
+  end
+  object Memo1: TMemo
+    Left = 104
+    Height = 122
+    Top = 208
+    Width = 216
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 6
+  end
+  object Memo2: TMemo
+    Left = 456
+    Height = 122
+    Top = 208
+    Width = 216
+    Lines.Strings = (
+      'Memo2'
+    )
+    TabOrder = 7
+  end
+  object Button1: TButton
+    Left = 192
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 384
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Anuluj'
+    OnClick = Button2Click
+    TabOrder = 9
+  end
+  object Button3: TButton
+    Left = 296
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Pożycz'
+    OnClick = Button3Click
+    TabOrder = 10
+  end
+  object Button4: TButton
+    Left = 296
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Oddaj'
+    OnClick = Button4Click
+    TabOrder = 11
+  end
+  object Button5: TButton
+    Left = 528
+    Height = 25
+    Top = 352
+    Width = 75
+    Caption = 'Historia'
+    OnClick = Button5Click
+    TabOrder = 12
+  end
+  object ComboBox1: TComboBox
+    Left = 456
+    Height = 23
+    Top = 48
+    Width = 216
+    ItemHeight = 15
+    Items.Strings = (
+      'Tak'
+      'Nie'
+    )
+    Style = csDropDownList
+    TabOrder = 13
+  end
+  object ComboBox2: TComboBox
+    Left = 456
+    Height = 23
+    Top = 80
+    Width = 216
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      ''
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+    )
+    Style = csDropDownList
+    TabOrder = 14
+  end
+  object DateEdit1: TDateEdit
+    Left = 456
+    Height = 23
+    Top = 144
+    Width = 196
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    OKCaption = 'OK'
+    CancelCaption = 'Cancel'
+    DateOrder = doNone
+    ButtonWidth = 23
+    CharCase = ecNormal
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 15
+  end
+  object Image1: TImage
+    Left = 704
+    Height = 320
+    Top = 48
+    Width = 240
+    AutoSize = True
+    Center = True
+    Stretch = True
+  end
+end

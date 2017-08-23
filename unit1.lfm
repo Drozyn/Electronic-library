@@ -1,0 +1,136 @@
+object Form1: TForm1
+  Left = 177
+  Height = 436
+  Top = 239
+  Width = 1199
+  Caption = 'Biblioteczka'
+  ClientHeight = 416
+  ClientWidth = 1199
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.4.0'
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 264
+    Top = 16
+    Width = 1169
+    AutoEdit = False
+    AutoFillColumns = True
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 0
+    OnDblClick = DBGrid1DblClick
+  end
+  object MainMenu1: TMainMenu
+    left = 536
+    top = 320
+    object MenuItem1: TMenuItem
+      Caption = 'Wybierz bazę'
+      object MenuItem6: TMenuItem
+        Caption = 'Książki'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Filmy'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Gry'
+        OnClick = MenuItem8Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Książki Nauka'
+        OnClick = MenuItem9Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Dodaj'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Szukaj'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Wyświetl według'
+      object MenuItem10: TMenuItem
+        Caption = 'Przeczytane'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Nieprzeczytane'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Pożyczone'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Wszystkie'
+        OnClick = MenuItem12Click
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Info'
+      OnClick = MenuItem5Click
+    end
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 368
+    top = 304
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    left = 416
+    top = 304
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'baza.db'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    LogEvents = []
+    Options = []
+    left = 312
+    top = 304
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 464
+    top = 304
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection2
+    Transaction = SQLTransaction2
+    Params = <>
+    left = 784
+    top = 328
+  end
+  object SQLTransaction2: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection2
+    left = 896
+    top = 328
+  end
+  object SQLite3Connection2: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'baza.db'
+    KeepConnection = False
+    Transaction = SQLTransaction2
+    LogEvents = []
+    Options = []
+    left = 728
+    top = 328
+  end
+end

@@ -1,0 +1,150 @@
+object Form16: TForm16
+  Left = 297
+  Height = 392
+  Top = 154
+  Width = 697
+  Caption = 'Biblioteczka'
+  ClientHeight = 392
+  ClientWidth = 697
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 12
+    Width = 137
+    Caption = 'Edycja istniejącego wpisu:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 48
+    Width = 30
+    Caption = 'Tytuł:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 48
+    Width = 216
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 80
+    Width = 33
+    Caption = 'Autor:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 112
+    Width = 78
+    Caption = 'Wydawnictwo:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 15
+    Top = 144
+    Width = 70
+    Caption = 'Rok wydania:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 176
+    Width = 28
+    Caption = 'ISBN:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 112
+    Height = 23
+    Top = 80
+    Width = 216
+    TabOrder = 1
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 112
+    Height = 23
+    Top = 112
+    Width = 216
+    TabOrder = 2
+    Text = 'Edit3'
+  end
+  object Edit4: TEdit
+    Left = 112
+    Height = 23
+    Top = 144
+    Width = 216
+    TabOrder = 3
+    Text = 'Edit4'
+  end
+  object Edit5: TEdit
+    Left = 112
+    Height = 23
+    Top = 176
+    Width = 216
+    TabOrder = 4
+    Text = 'Edit5'
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 307
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 128
+    Height = 25
+    Top = 307
+    Width = 75
+    Caption = 'Pożycz'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Button3: TButton
+    Left = 128
+    Height = 25
+    Top = 307
+    Width = 75
+    Caption = 'Oddaj'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+  object Button4: TButton
+    Left = 232
+    Height = 25
+    Top = 307
+    Width = 75
+    Caption = 'Anuluj'
+    OnClick = Button4Click
+    TabOrder = 8
+  end
+  object Button5: TButton
+    Left = 336
+    Height = 25
+    Top = 307
+    Width = 75
+    Caption = 'Historia'
+    OnClick = Button5Click
+    TabOrder = 9
+  end
+  object Image1: TImage
+    Left = 424
+    Height = 320
+    Top = 12
+    Width = 240
+  end
+end

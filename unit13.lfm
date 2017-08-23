@@ -1,0 +1,72 @@
+object Form13: TForm13
+  Left = 360
+  Height = 295
+  Top = 180
+  Width = 768
+  Caption = 'Biblioteczka'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object DBGrid1: TDBGrid
+    Left = 32
+    Height = 144
+    Top = 40
+    Width = 688
+    AutoEdit = False
+    AutoFillColumns = True
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 8
+    Width = 120
+    Caption = 'Historia wypożyczenia:'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 320
+    Height = 25
+    Top = 232
+    Width = 75
+    Caption = 'Zamknij'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'baza.db'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    LogEvents = []
+    Options = []
+    left = 680
+    top = 232
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 688
+    top = 184
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    left = 608
+    top = 216
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 536
+    top = 232
+  end
+end

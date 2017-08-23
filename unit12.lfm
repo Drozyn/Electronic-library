@@ -1,0 +1,89 @@
+object Form12: TForm12
+  Left = 502
+  Height = 240
+  Top = 217
+  Width = 344
+  Caption = 'Biblioteczka'
+  ClientHeight = 240
+  ClientWidth = 344
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 19
+    Width = 78
+    Caption = 'Wypożyczanie:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 56
+    Width = 26
+    Caption = 'Imię:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 120
+    Height = 23
+    Top = 56
+    Width = 200
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 88
+    Width = 53
+    Caption = 'Nazwisko:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 120
+    Height = 23
+    Top = 88
+    Width = 200
+    TabOrder = 1
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 120
+    Width = 91
+    Caption = 'Kiedy pożyczona:'
+    ParentColor = False
+  end
+  object DateEdit1: TDateEdit
+    Left = 120
+    Height = 23
+    Top = 120
+    Width = 184
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    OKCaption = 'OK'
+    CancelCaption = 'Cancel'
+    DateOrder = doNone
+    ButtonWidth = 23
+    CharCase = ecNormal
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 72
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 200
+    Height = 25
+    Top = 184
+    Width = 75
+    Caption = 'Anuluj'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end
